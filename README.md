@@ -1,5 +1,11 @@
-# Toy Problem Setup Template
+# Quick Sort
 
-This repo includes the initial setup for your toy problems. [`Use this template`](https://github.com/setezazian/toyproblem-setup/generate) and have fun!
+Quicksort is a sorting algorithm that uses a divide and conquer strategy;
 
-[More info on how to use a template repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+It:
+ *    Takes in an array.
+ *    Picks a value in the array as a pivot.
+ *    Partitions all the elements of the array into two arrays, based on
+ *    if they are larger or smaller than the pivot.
+ *    Recursively sorts the two halves.
+ *    Combines the two arrays and the pivot into a sorted array.
