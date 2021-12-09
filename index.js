@@ -4,9 +4,13 @@ const quicksort = (array) => {
   }
   const right = [];
   const left = [];
-  const pivotValue = array[0];
+  const pivotValue = array[Math.floor(array.length / 2)];
 
-  for (let i = 1; i < array.length; i += 1) {
+  for (let i = 0; i < array.length; i += 1) {
+    if (i === Math.floor(array.length / 2)) {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
     if (array[i] < pivotValue) {
       left.push(array[i]);
     } else {
